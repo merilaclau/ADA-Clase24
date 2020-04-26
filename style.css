@@ -1,0 +1,91 @@
+body {
+    align-items: center;
+    background: lightcoral;
+    color: whitesmoke;
+    display: flex;
+    font-family: 'Baloo Paaji 2', cursive;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cta {
+    position: relative;
+    width: 500px;
+}
+
+.cta p {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: lightcoral;
+    padding: 15px;
+}
+
+.cta a {
+    color: lightcoral;   
+}
+
+a:visited {
+    color: inherit;
+}
+
+.cta:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0; 
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid whitesmoke;
+    top: 58px;
+    right: 100px;
+}
+
+#target-modal {
+    background-color: rgba(119, 136, 153, 0.63);
+    display: none;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+.modal-window {
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #333333;
+    box-sizing: border-box;
+    color: rgba(119, 136, 153);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 50vh;
+    padding: 20px;
+    width: 500px;   
+}
+
+.modal-window a {
+    background-color: lightcoral;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: dashed 1px whitesmoke;
+    color: whitesmoke;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+#target-modal:target {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.modal-window a:visited {
+    color: whitesmoke;
+}
